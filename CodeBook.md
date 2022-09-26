@@ -1,4 +1,3 @@
-
 # Codebook
 
 This code book describes the original data set data, the transformations performed to clean up the data, and the variables of the resulting tidy data set.
@@ -36,274 +35,73 @@ The transformations are implemented in the R script called run_analysis.R
 
 ### Variables in the tidy data set 
 
-Data: Subject  
-Measurement: Identifier for volunteers carrying out the experiment  
-Value: From 1 to 30  
-
-Data: Activity  
-Measurement: Activity performed by the subject  
-Value: Walking, Walking upstairs, Walking downstairs, Sitting, Standing, or Laying  
-
-Data: TimeBodyAccMeanX  
-Measurement: Time domain body accelerometer signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccMeanY 
-Measurement: Time domain body accelerometer signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccMeanZ  
-Measurement: Time domain body accelerometer signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccMeanX  
-Measurement: Time domain gravity accelerometer signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccMeanY  
-Measurement: Time domain gravity accelerometer signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccMeanZ  
-Measurement: Time domain gravity accelerometer signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkMeanX  
-Measurement: Time domain body accelerometer jerk signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkMeanY  
-Measurement: Time domain body accelerometer jerk signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkMeanZ  
-Measurement: Time domain body accelerometer jerk signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroMeanX  
-Measurement: Time domain body gyroscope signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroMeanY  
-Measurement: Time domain body gyroscope signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroMeanZ  
-Measurement: Time domain body gyroscope signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkMeanX  
-Measurement: Time domain body gyroscope jerk signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkMeanY  
-Measurement: Time domain body gyroscope jerk signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkMeanZ  
-Measurement: Time domain body gyroscope jerk signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccMagMean  
-Measurement: Time domain body accelerometer magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccMagMean  
-Measurement: Time domain gravity accelerometer magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkMagMean  
-Measurement: Time domain body accelerometer jerk magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroMagMean  
-Measurement: Time domain body gyroscope magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkMagMean  
-Measurement: Time domain body gyroscope jerk magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccMeanX  
-Measurement: Frequency domain body accelerometer signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccMeanY  
-Measurement: Frequency domain body accelerometer signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccMeanZ  
-Measurement: Frequency domain body accelerometer signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkMeanX  
-Measurement: Frequency domain body accelerometer jerk signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkMeanY  
-Measurement: Frequency domain body accelerometer jerk signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkMeanZ  
-Measurement: Frequency domain body accelerometer jerk signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroMeanX  
-Measurement: Frequency domain body gyroscope signal: mean value along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroMeanY  
-Measurement: Frequency domain body gyroscope signal: mean value along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroMeanZ  
-Measurement: Frequency domain body gyroscope signal: mean value along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccMagMean  
-Measurement: Frequency domain body accelerometer magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkMagMean  
-Measurement: Frequency domain body accelerometer jerk magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroMagMean  
-Measurement: Frequency domain body gyroscope magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroJerkMagMean  
-Measurement: Frequency domain body gyroscope jerk magnitude signal: mean value  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccStdX  
-Measurement: Time domain body accelerometer signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccStdY  
-Measurement: Time domain body accelerometer signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccStdZ  
-Measurement: Time domain body accelerometer signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccStdX  
-Measurement: Time domain gravity accelerometer signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccStdY  
-Measurement: Time domain gravity accelerometer signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccStdZ  
-Measurement: Time domain gravity accelerometer signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkStdX  
-Measurement: Time domain body accelerometer jerk signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkStdY  
-Measurement: Time domain body accelerometer jerk signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkStdZ  
-Measurement: Time domain body accelerometer jerk signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroStdX  
-Measurement: Time domain body gyroscope signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroStdY  
-Measurement: Time domain body gyroscope signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroStdZ  
-Measurement: Time domain body gyroscope signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkStdX  
-Measurement: Time domain body gyroscope jerk signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkStdY  
-Measurement: Time domain body gyroscope jerk signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkStdZ  
-Measurement: Time domain body gyroscope jerk signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccMagStd  
-Measurement: Time domain body accelerometer magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeGravityAccMagStd  
-Measurement: Time domain gravity accelerometer magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyAccJerkMagStd  
-Measurement: Time domain body accelerometer jerk magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroMagStd  
-Measurement: Time domain body gyroscope magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: TimeBodyGyroJerkMagStd  
-Measurement: Time domain body gyroscope jerk magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccStdX  
-Measurement: Frequency domain body accelerometer signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccStdY  
-Measurement: Frequency domain body accelerometer signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccStdZ  
-Measurement: Frequency domain body accelerometer signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkStdX  
-Measurement: Frequency domain body accelerometer jerk signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkStdY  
-Measurement: Frequency domain body accelerometer jerk signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkStdZ  
-Measurement: Frequency domain body accelerometer jerk signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroStdX  
-Measurement: Frequency domain body gyroscope signal: standard deviation along the x-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroStdY  
-Measurement: Frequency domain body gyroscope signal: standard deviation along the y-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroStdZ  
-Measurement: Frequency domain body gyroscope signal: standard deviation along the z-axis  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccMagStd  
-Measurement: Frequency domain body accelerometer magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyAccJerkMagStd  
-Measurement: Frequency domain body accelerometer jerk magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroMagStd 
-Measurement: Frequency domain body gyroscope magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
-
-Data: FrequencyBodyGyroJerkMagStd  
-Measurement: Frequency domain body gyroscope jerk magnitude signal: standard deviation  
-Value: Normalized and bounded within [-1,1]  
+| Variable | Description | Value
+| :-- | :-- | :--
+| Subject| Identifier for volunteers carrying out the experiment| From 1 to 30 
+| Activity| Activity performed by the subject| Walking, Walking upstairs, Walking downstairs, Sitting, Standing, or Laying 
+| TimeBodyAccMeanX| Time domain body accelerometer signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccMeanY| Time domain body accelerometer signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccMeanZ| Time domain body accelerometer signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| TimeGravityAccMeanX| Time domain gravity accelerometer signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| TimeGravityAccMeanY| Time domain gravity accelerometer signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| TimeGravityAccMeanZ| Time domain gravity accelerometer signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkMeanX| Time domain body accelerometer jerk signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkMeanY| Time domain body accelerometer jerk signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkMeanZ| Time domain body accelerometer jerk signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroMeanX| Time domain body gyroscope signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroMeanY| Time domain body gyroscope signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroMeanZ| Time domain body gyroscope signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkMeanX| Time domain body gyroscope jerk signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkMeanY| Time domain body gyroscope jerk signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkMeanZ| Time domain body gyroscope jerk signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccMagMean| Time domain body accelerometer magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| TimeGravityAccMagMean| Time domain gravity accelerometer magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkMagMean| Time domain body accelerometer jerk magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| TimeBodyGyroMagMean| Time domain body gyroscope magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkMagMean| Time domain body gyroscope jerk magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccMeanX| Frequency domain body accelerometer signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccMeanY| Frequency domain body accelerometer signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccMeanZ| Frequency domain body accelerometer signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkMeanX| Frequency domain body accelerometer jerk signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkMeanY| Frequency domain body accelerometer jerk signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkMeanZ| Frequency domain body accelerometer jerk signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroMeanX| Frequency domain body gyroscope signal: mean value along the x-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroMeanY| Frequency domain body gyroscope signal: mean value along the y-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroMeanZ| Frequency domain body gyroscope signal: mean value along the z-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccMagMean| Frequency domain body accelerometer magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkMagMean| Frequency domain body accelerometer jerk magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroMagMean| Frequency domain body gyroscope magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroJerkMagMean| Frequency domain body gyroscope jerk magnitude signal: mean value| Normalized and bounded within [-1,1] 
+| TimeBodyAccStdX| Time domain body accelerometer signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccStdY| Time domain body accelerometer signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccStdZ| Time domain body accelerometer signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| TimeGravityAccStdX| Time domain gravity accelerometer signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| TimeGravityAccStdY| Time domain gravity accelerometer signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| TimeGravityAccStdZ| Time domain gravity accelerometer signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkStdX| Time domain body accelerometer jerk signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkStdY| Time domain body accelerometer jerk signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkStdZ| Time domain body accelerometer jerk signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroStdX| Time domain body gyroscope signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroStdY| Time domain body gyroscope signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroStdZ| Time domain body gyroscope signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkStdX| Time domain body gyroscope jerk signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkStdY| Time domain body gyroscope jerk signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkStdZ| Time domain body gyroscope jerk signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| TimeBodyAccMagStd| Time domain body accelerometer magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| TimeGravityAccMagStd| Time domain gravity accelerometer magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| TimeBodyAccJerkMagStd| Time domain body accelerometer jerk magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| TimeBodyGyroMagStd| Time domain body gyroscope magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| TimeBodyGyroJerkMagStd| Time domain body gyroscope jerk magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccStdX| Frequency domain body accelerometer signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccStdY| Frequency domain body accelerometer signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccStdZ| Frequency domain body accelerometer signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkStdX| Frequency domain body accelerometer jerk signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkStdY| Frequency domain body accelerometer jerk signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkStdZ| Frequency domain body accelerometer jerk signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroStdX| Frequency domain body gyroscope signal: standard deviation along the x-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroStdY| Frequency domain body gyroscope signal: standard deviation along the y-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroStdZ| Frequency domain body gyroscope signal: standard deviation along the z-axis| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccMagStd| Frequency domain body accelerometer magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| FrequencyBodyAccJerkMagStd| Frequency domain body accelerometer jerk magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroMagStd| Frequency domain body gyroscope magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
+| FrequencyBodyGyroJerkMagStd| Frequency domain body gyroscope jerk magnitude signal: standard deviation| Normalized and bounded within [-1,1] 
