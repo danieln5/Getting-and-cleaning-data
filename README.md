@@ -1,7 +1,3 @@
----
-title: "Readme"
----
-
 # Getting and Cleaning Data Course Project
 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
@@ -36,7 +32,7 @@ The Github repository contains the following files:
 
 ## Data analysis
 
-To reproduce the the tidy data set download and sorce the run_analysis.R script.
+To reproduce the the tidy data set download and source the run_analysis.R script.
 
 The script does the following:
 
@@ -47,4 +43,4 @@ The script does the following:
 - Uses descriptive activity names to name the activities in the data set
 - Appropriately labels the data set with descriptive variable names. 
 - From the resulting data set, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-- Stores the tidy data set in a textfile called tidy_data_set.txt in the working directory
+- Stores the tidy data set in a text file called tidy_data_set.txt in the working directory

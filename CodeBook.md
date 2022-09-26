@@ -1,6 +1,4 @@
----
-title: "CodeBook"
----
+# Code book
 
 This code book describes the original data set data, the transformations performed to clean up the data, and the variables of the resulting tidy data set.
 
