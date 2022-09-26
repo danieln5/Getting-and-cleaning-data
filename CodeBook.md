@@ -1,4 +1,6 @@
-# Codebook
+---
+title: "CodeBook"
+---
 
 This code book describes the original data set data, the transformations performed to clean up the data, and the variables of the resulting tidy data set.
 
@@ -18,12 +20,22 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
+This code book updates the following code books available in the original data set:
+
+- features_info.txt: Shows information about the variables used on the feature vector.
+- features.txt: List of all features.
+- activity_labels.txt: Links the class labels with their activity name.  
+
 A full description is available at the site where the data was obtained:
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+### Acknowledgments
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 ## Transformations
 
-The following transformations and work was performed on to clean up the data to create a tidy data set from the original data set:  
+The following transformations and work was performed to clean up the data and create a tidy data set from the original data set:  
 
 1. The training and the test sets were merged to create one data set.
 2. Only the measurements on the mean and standard deviation for each measurement were extracted. 
@@ -35,7 +47,7 @@ The transformations are implemented in the R script called run_analysis.R
 
 ### Variables in the tidy data set 
 
-| Variable | Description | Value
+| Variable | Description | Value/units
 | :-- | :-- | :--
 | Subject| Identifier for volunteers carrying out the experiment| From 1 to 30 
 | Activity| Activity performed by the subject| Walking, Walking upstairs, Walking downstairs, Sitting, Standing, or Laying 
