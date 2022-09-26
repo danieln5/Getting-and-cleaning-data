@@ -16,7 +16,7 @@ if (!file.exists(filename)) {
   url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(url, destfile=filename, method="curl")
 }
-  
+
 # Unzip the file, unless the project data folder is already present
 if (!file.exists("UCI HAR Dataset")) { 
   unzip(filename) 
@@ -84,5 +84,5 @@ data_average_long <- summarize(data_long, mean(value))
 # Alternative way to summarize data in wide format from long format
 #data_average <- dcast(data_long, Subject + Activity ~ variable, mean)
 
-# Store the tidy data set in a textfile
+# Store the tidy data set in a text file
 write.table(data_average, file="tidy_data_set.txt")
