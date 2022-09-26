@@ -85,4 +85,4 @@ data_average_long <- summarize(data_long, mean(value))
 #data_average <- dcast(data_long, Subject + Activity ~ variable, mean)
 
 # Store the tidy data set in a text file
-write.table(data_average, file="tidy_data_set.txt")
+write.table(data_average, file="tidy_data_set.txt", row.name=FALSE)
